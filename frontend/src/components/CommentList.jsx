@@ -14,7 +14,7 @@ const CommentList = ({ refreshKey }) => {
         setComments(data);
       } catch (err) {
         setError("Failed to fetch comments. Is the backend server running?");
-        console.error(err);
+        console.error("API Error:", err);
       } finally {
         setLoading(false);
       }
